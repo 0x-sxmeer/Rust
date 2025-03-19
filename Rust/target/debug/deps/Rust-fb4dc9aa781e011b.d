@@ -1,0 +1,5 @@
+C:\schlset\Rust\Rust\target\debug\deps\libRust-fb4dc9aa781e011b.rmeta: src\main.rs
+
+C:\schlset\Rust\Rust\target\debug\deps\Rust-fb4dc9aa781e011b.d: src\main.rs
+
+src\main.rs:
