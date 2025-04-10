@@ -75,6 +75,47 @@ fn main() {
     }
     
 
+    // Floating point numbers
+    
+    let x = 2.0; // f64 default
+    let y: f32 = 3.0; // f32
+    
+    println!("x = {},y = {}", x, y);
 
+
+    //Numeric operations
+    let sum = x + y; // Addition
+    let difference = x - y; // Subtraction
+    let product = x * y; // Multiplication
+    let quotient = x / y; // Division
+    let remainder = x % y; // Remainder
+    // Note: In Rust, the division of two integers results in an integer.
+    // For example, 5 / 2 = 2, not 2.5.
+    println!("sum = {},difference = {},product = {},quotient = {},remainder = {}", sum, difference, product, quotient, remainder);
+
+
+    // Boolean type
+    let t = true; // implicit declaration
+    let f: bool = true; // explicit declaration
+
+    println!("t = {},f = {}", t, f);
+
+    //if
+    if t {
+        println!("t is true");
+    } else {
+        println!("t is false");
+    }
+
+    //if else
+    if t {
+        println!("t is true");
+    } else if f {
+        println!("f is true");
+    } else {
+        println!("both are false");
+    }
+
+ 
 
 }
