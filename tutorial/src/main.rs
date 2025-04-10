@@ -16,8 +16,8 @@ fn main() {
     let y = x+2;
     println!("valve of new x {}", y);
 
-    let y= "hello world";
-    print!("valve of h is {}", y);
+   let t = "hello world";
+    print!("valve of t is {}", t);
 
 
 }
