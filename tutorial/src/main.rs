@@ -52,7 +52,28 @@ fn main() {
     // -enums
   
 
+    // Integer
+    // Length	Signed	Unsigned
+    // 8-bit	i8	    u8
+    // 16-bit	i16	    u16
+    // 32-bit	i32	    u32
+    // 64-bit	i64	    u64
+    // 128-bit	i128	u128
+    // arch	    isize	usize
 
+    // Floating point numbers
+    {
+        let decimal: u128 = 98_222;
+        let hex: u128 = 0xef;
+        let octal: u128 = 0o67;
+        let binary: u128 = 0b1111_0000;
+    
+        println!("Decimal: {}", decimal); // Output: Decimal: 98222
+        println!("Hexadecimal: {}", hex); // Output: Hexadecimal: 255
+        println!("Octal: {}", octal);     // Output: Octal: 63
+        println!("Binary: {}", binary);   // Output: Binary: 240
+    }
+    
 
 
 
