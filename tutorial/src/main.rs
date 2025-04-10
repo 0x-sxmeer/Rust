@@ -138,6 +138,43 @@ fn main() {
     }
 
 
+    // Tuple
+
+    // Accessing tuple elements
+    let tup: (i32, f64, char) = (500, 6.4, '1');
+    let (x, y, z) = tup;
+    println!("x = {},y = {},z = {}", x, y, z);
+    // Accessing by index
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+    println!("five_hundred = {},six_point_four = {},one = {}", five_hundred, six_point_four, one);
     
+    
+    
+    // Array
+    
+    let a = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+    println!("first = {},second = {}", first, second);
+    // Array length
+    let a = [1, 2, 3, 4, 5];
+    let length = a.len();
+    println!("length of array a is {}", length);
+    // Array slice
+    let a = [1, 2, 3, 4, 5];
+    let slice = &a[1..3]; // [2, 3]
+    println!("slice of array a is {:?}", slice);
+    // Array iteration
+    let a = [1, 2, 3, 4, 5];
+    for i in 0..a.len() {
+        println!("a[{}] = {}", i, a[i]);    
+    }
+
+    
+
+
+
 
 }
