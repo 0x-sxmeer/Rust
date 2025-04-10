@@ -50,8 +50,8 @@ fn main() {
     // Custom Types
     // -structs
     // -enums
-  
 
+    {
     // Integer
     // Length	Signed	Unsigned
     // 8-bit	i8	    u8
@@ -62,7 +62,7 @@ fn main() {
     // arch	    isize	usize
 
     // Floating point numbers
-    {
+
         let decimal: u128 = 98_222;
         let hex: u128 = 0xef;
         let octal: u128 = 0o67;
