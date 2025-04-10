@@ -1,3 +1,4 @@
+
 fn main() {
     println!("Hello, peter");
 
@@ -96,26 +97,47 @@ fn main() {
 
     // Boolean type
     let t = true; // implicit declaration
-    let f: bool = true; // explicit declaration
+    let f: bool = false; // explicit declaration
 
     println!("t = {},f = {}", t, f);
 
-    //if
+    // Boolean operations
     if t {
         println!("t is true");
     } else {
         println!("t is false");
     }
 
-    //if else
-    if t {
-        println!("t is true");
-    } else if f {
-        println!("f is true");
+    let number = 8;
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
     } else {
-        println!("both are false");
+        println!("number is not divisible by 4,3,2");
+    }
+    
+    let number2 = 8;
+    if number2 % number == 0 {
+        println!("number2 is divisible by number");
+    } else {
+        println!("number2 is not divisible by number");
+    }
+ 
+
+    // Character type
+    let c = 'z'; // implicit declaration
+    let x = 'X';
+    println!("c = {},x = {}",c ,x);
+
+    // iterate over characters in a string
+    for c in "Hello".chars() {
+        println!("{}", c);
     }
 
- 
+
+    
 
 }
