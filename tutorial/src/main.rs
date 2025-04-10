@@ -19,15 +19,6 @@ fn main() {
     let t =5;
     println!("valve of t is {}", t*4);
 
-    
-    
-    //constants
-    const MAX_POINTS: i32 = -100_000;
-    println!("valve of max points is {}", MAX_POINTS);
-    //We can not change the value of MAX_POINTS
-    //MAX_POINTS = 100; //error: cannot assign twice to immutable variable `MAX_POINTS`
-    
-    
     //mutable variable
     let mut x = 5;
     println!("valve of x is {}", x);
@@ -41,21 +32,28 @@ fn main() {
 
     println!("valve of x is {}", x);
 
-    //data types
-    let guess: u32 = "42".parse().expect("not a number");
-    println!("valve of guess is {}", guess);
+    //constants
+    const MAX_POINTS: i32 = -100_000;
+    println!("valve of max points is {}", MAX_POINTS);
+    //We can not change the value of MAX_POINTS
+    //MAX_POINTS = 100; //error: cannot assign twice to immutable variable `MAX_POINTS`
+    
+    // Data types
+    // scalar types
+    // -integer
+    // -floating point numbers
+    // -boolean
+    // -character
+    // compound types
+    // -tuple
+    // -array
+    // Custom Types
+    // -structs
+    // -enums
+  
 
-    //array
-    let a = [1, 2, 3, 4, 5];
-    println!("valve of a is {}", a[3]);
 
 
 
 
-
-
-
-
-
-
-} 
+}
