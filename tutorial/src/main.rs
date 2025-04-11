@@ -144,6 +144,7 @@ fn main() {
     let tup: (i32, f64, char) = (500, 6.4, '1');
     let (x, y, z) = tup;
     println!("x = {},y = {},z = {}", x, y, z);
+
     // Accessing by index
     let five_hundred = tup.0;
     let six_point_four = tup.1;
@@ -158,14 +159,23 @@ fn main() {
     let first = a[0];
     let second = a[1];
     println!("first = {},second = {}", first, second);
-    // Array length
+
+    //elements
     let a = [1, 2, 3, 4, 5];
+    for element in a.iter() {
+        println!("element = {}", element);
+    }
+
+    // Array length
+    let a: [u32; 5] = [1, 2, 3, 4, 5];
     let length = a.len();
     println!("length of array a is {}", length);
+
     // Array slice
     let a = [1, 2, 3, 4, 5];
     let slice = &a[1..3]; // [2, 3]
     println!("slice of array a is {:?}", slice);
+
     // Array iteration
     let a = [1, 2, 3, 4, 5];
     for i in 0..a.len() {
@@ -173,6 +183,30 @@ fn main() {
     }
 
     
+    //CUSTOM DATA TYPES
+    // Structs
+
+    struct User {
+        active: bool,
+        username: String,
+        email: String,
+        sign_in_count: u64,
+    }
+    
+        let user1 = User {
+            active: true,
+            username: String::from("someusername123"),
+            email: String::from("someone@example.com"),
+            sign_in_count: 1,
+        };
+        println!("user1.active = {},user1.username = {},user1.email = {},user1.sign_in_count = {}", user1.active, user1.username, user1.email, user1.sign_in_count);
+
+
+
+
+
+    
+
 
 
 
