@@ -55,6 +55,13 @@ fn main() {
         // - Boolean
         // - Character
 
+        //Numeric Operations
+        // - Addition
+        // - Subtraction
+        // - Multiplication
+        // - Division
+        // - Remainder
+
         // Compound Types
         // - Tuple
         // - Array
@@ -64,6 +71,7 @@ fn main() {
         // - Enums
 
     }
+
     // Scalar Types
     let a: i32 = 5;
     let b: f64 = 5.0;
@@ -75,6 +83,33 @@ fn main() {
     println!("C is a char: {c}");
     println!("D is a boolean: {d}");
     println!("E is a string: {e}");
+
+    //Numeric Operations
+    let x: i32 = 5;
+    let y: i32 = 11;
+    println!("x = {x},y = {y}");
+    //Addition
+    let sum = x + y;
+    println!("sum = {sum}");
+    //Subtraction
+    let difference = x - y;
+    println!("difference = {difference}");
+    //Multiplication
+    let product = x * y;
+    println!("product = {product}");
+    //Division
+    let quotient = y / x;
+    println!("quotient = {quotient}");
+    //Remainder
+    let remainder = y % x;
+    println!("remainder = {remainder}");
+    // Note: In Rust, the division of two integers results in an integer.
+    // Floating point division
+    let x: f64 = 5.0;
+    let y: f64 = 2.0;
+    let quotient = x / y;
+    println!("quotient = {quotient}");
+
 
     //Compound Types
 
@@ -92,8 +127,14 @@ fn main() {
     let one = tup.2;
     println!("five_hundred = {},six_point_four = {},one = {}", five_hundred, six_point_four, one);
 
+
     //Array
     let a = [1, 2, 3, 4, 5];
+    println!("The value of a is: {:?}", a);
+
+    //-Array with same value
+    let b = [3; 5];
+    println!("The value of a is: {:?}", b);
 
     //-Accessing array elements by index
     let first = a[0];
@@ -110,8 +151,11 @@ fn main() {
     println!("length of array a is {}", length);
 
     //-Array slice
-    let slice = &a[1..3];
+    let slice = &a[0..3];
     println!("slice of array a is {:?}", slice);
+
+
+    
 
 
 
