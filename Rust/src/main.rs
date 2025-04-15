@@ -10,7 +10,7 @@ fn main() {
 
     //Mutable Variables
     let mut y = 5;
-    println!("The value of mut y is: {}",y);
+    println!("The value of mut y is: {y}");
 
     y = 6;
     println!("The value of y is: {y}");
@@ -48,14 +48,71 @@ fn main() {
 
 
     //Data Types
+    {
+        // Scalar Types
+        // - Integer
+        // - Floating Point Numbers
+        // - Boolean
+        // - Character
+
+        // Compound Types
+        // - Tuple
+        // - Array
+
+        // Custom Types
+        // - Structs
+        // - Enums
+
+    }
+    // Scalar Types
     let a: i32 = 5;
     let b: f64 = 5.0;
     let c: char = 'a';
     let d: bool = true;
     let e: &str = "Hello, world!";
-    let f: [i32; 5] = [1, 2, 3, 4, 5];
-    let g: (i32, f64, char) = (5, 5.0, 'a');
-    println!("The value of a is = {}, b is = {}, c is = {}, d is = {}, e is = {}, f is = {:?}, g is = {:?}", a, b, c, d, e, f, g);
+    println!("A is an integer: {a}");
+    println!("B is a float: {b}");
+    println!("C is a char: {c}");
+    println!("D is a boolean: {d}");
+    println!("E is a string: {e}");
+
+    //Compound Types
+
+    //Tuple
+    let tup: (i32, f64, char) = (500, 6.4, '1');
+    println!("The value of tup is: {:?}", tup);
+
+    //-Destructuring tuple
+    let (x, y, z) = tup;
+    println!("x = {},y = {},z = {}", x, y, z);
+
+    //=Accessing tuple elements by index
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+    println!("five_hundred = {},six_point_four = {},one = {}", five_hundred, six_point_four, one);
+
+    //Array
+    let a = [1, 2, 3, 4, 5];
+
+    //-Accessing array elements by index
+    let first = a[0];
+    let second = a[1];
+    println!("first = {},second = {}", first, second);
+
+    //-Iterating over array elements
+    for i in a.iter() {
+        println!("{}", i);
+    }
+
+    //-Array length
+    let length = a.len();
+    println!("length of array a is {}", length);
+
+    //-Array slice
+    let slice = &a[1..3];
+    println!("slice of array a is {:?}", slice);
+
 
 
 
