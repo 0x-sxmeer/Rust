@@ -154,15 +154,22 @@ fn main() {
     let slice = &a[0..3];
     println!("slice of array a is {:?}", slice);
 
-    
+another_function(1);
+}
 
+//Functions
+fn another_function(x: i32) {
+    println!("The value of x is: {x}");
 
+    let y = {
+        let x = 3;
+        x + 1 // This expression is returned
+    };
+    println!("The value of y is: {y}");
 
-
-
-
-
-
-
-
+    let z = {
+        let x = 3;
+        x + 1 // This expression is returned
+    };  
+    println!("The value of z is: {z}");
 }
