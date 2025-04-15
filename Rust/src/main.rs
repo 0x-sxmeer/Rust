@@ -154,8 +154,8 @@ fn main() {
     let slice = &a[0..3];
     println!("slice of array a is {:?}", slice);
 
-
     
+
 
 
 
