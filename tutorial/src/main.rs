@@ -1,6 +1,10 @@
 fn main() {
     println!("Hello, peter");
     another_function(42,'a');
+    let (sum1, sum2) = sum(5, 10);
+    println!("The sum is: {sum1}");
+    println!("The difference is: {sum2}");
+    println!("sum = {}, diff = {}", sum1, sum2);
 }
 
 
@@ -27,7 +31,7 @@ fn another_function(num: i32,letter: char) {
 
 
 //Function with Return Value
-fn five() -> i32 {
-    5 // This is an expression, so it doesn't need a semicolon
+fn sum(num1: i32,num2: i32) -> (i32,i32) {
+    (num1 + num2, num1 - num2) // This is a tuple
 }
 
