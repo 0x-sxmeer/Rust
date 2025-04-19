@@ -171,4 +171,15 @@ fn another_function(x: i32) {
         x + 1 // This expression is returned
     };  
     println!("The value of z is: {z}");
+
+    let a = 5;
+    let b = 10;
+    let sum = a + b;
+    println!("The sum of {a} and {b} is: {sum}");
+
+
+
+
+
+
 }
