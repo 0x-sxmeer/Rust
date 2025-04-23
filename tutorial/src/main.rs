@@ -1,6 +1,9 @@
 fn main() {
-    println!("Hello, peter");
+
+    println!("Hello, Peter");
+
     another_function(42,'a');
+
     let (sum1, sum2) = sum(5, 10);
     println!("The sum is: {sum1}");
     println!("The difference is: {sum2}");
@@ -11,7 +14,7 @@ fn main() {
 
 //Parameters and Arguments
 fn another_function(num: i32,letter: char) {
-    println!("The value of num is: {num}");
+    println!("The value of num is: {num}"); 
     println!("The value of letter is: {letter}");
 
 //Statements and Expressions
@@ -31,7 +34,8 @@ fn another_function(num: i32,letter: char) {
 
 
 //Function with Return Value
-fn sum(num1: i32,num2: i32) -> (i32,i32) {
+fn sum(num1: i32,num2: i32) -> (i32,i32)
+{
     (num1 + num2, num1 - num2) // This is a tuple
 }
 
